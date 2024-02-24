@@ -40,11 +40,6 @@ Created by [Rajofearth](https://github.com/rajofearth) with the help of ChatGPT 
     │   │   ├── song1.mp3
     │   │   ├── song2.mp3
     │   │   └── ...
-    │   ├── Album2
-    │   │   ├── song1.mp3
-    │   │   ├── song2.mp3
-    │   │   └── ...
-    │   └── ...
     ├── Artist2
     │   ├── Album1
     │   │   ├── song1.mp3
@@ -58,7 +53,7 @@ Created by [Rajofearth](https://github.com/rajofearth) with the help of ChatGPT 
     └── ...
 ```
 
-#### Note
+## Note
 If you want to change the path where your songs are located, you can modify the `mp3_directory` variable in the `mp3orga.py` script to point to your desired folder location.
 
 ## Contributing
