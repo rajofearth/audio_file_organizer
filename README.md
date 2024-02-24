@@ -1,8 +1,8 @@
+# Audio Organizer
 
-# MP3 Organizer
+This Python script helps organize your audio files by various parameters such as artist, album, and genre, creating a structured directory for your music library.
 
-This Python script helps organize your MP3 files by artist and album, creating a tidy directory structure for your music library.
-Created by [Rajofearth](https://github.com/rajofearth) with the help of [ChatGPT 3.5](https://openai.com/blog/chatgpt)
+Created by [Rajofearth](https://github.com/rajofearth) with the assistance of [ChatGPT 3.5](https://openai.com/blog/chatgpt).
 
 ## Getting Started
 
@@ -13,50 +13,27 @@ Created by [Rajofearth](https://github.com/rajofearth) with the help of [ChatGPT
 ### Installation
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/mp3_organizer.git
+   git clone https://github.com/your-username/audio_organizer.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd mp3_organizer
+   cd audio_organizer
    ```
 
 3. Run the script:
    ```bash
-   python3 mp3orga.py
+   python3 audio_organizer.py
    ```
 
 ### Usage
-1. Run the script `mp3orga.py`.
-2. Scrpt will ask User to for Folder of mp3 Files, for example
-   $ python3 mp3orga1.py
-   Enter the path to the folder containing MP3 files:
-4. The script will organize your MP3 files into folders based on artist and album.
-
-#### Folder Structure
-```markdown
-.
-└── mp3_files
-    ├── Artist1
-    │   ├── Album1
-    │   │   ├── song1.mp3
-    │   │   ├── song2.mp3
-    │   │   └── ...
-    ├── Artist2
-    │   ├── Album1
-    │   │   ├── song1.mp3
-    │   │   ├── song2.mp3
-    │   │   └── ...
-    │   ├── Album2
-    │   │   ├── song1.mp3
-    │   │   ├── song2.mp3
-    │   │   └── ...
-    │   └── ...
-    └── ...
-```
+1. Run the script `audio_organizer.py`.
+2. The script will prompt you to enter the path to the folder containing your audio files.
+3. Define the folder structure for organizing your files based on your preferences.
+4. The script will then organize your audio files into folders based on the specified structure.
 
 ## Note
-If you want to change the path where your songs are located, you can modify the `mp3_directory` variable in the `mp3orga.py` script to point to your desired folder location.
+If you want to modify the path where your audio files are located or change the folder structure, you can do so interactively when prompted by the script during runtime.
 
 ## Contributing
 Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
