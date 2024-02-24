@@ -2,7 +2,7 @@
 # MP3 Organizer
 
 This Python script helps organize your MP3 files by artist and album, creating a tidy directory structure for your music library.
-Created by [Rajofearth](https://github.com/rajofearth) with the help of ChatGPT 3.5
+Created by [Rajofearth](https://github.com/rajofearth) with the help of [ChatGPT 3.5](https://openai.com/blog/chatgpt)
 
 ## Getting Started
 
