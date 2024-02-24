@@ -1,7 +1,14 @@
 import os
 from mutagen.mp3 import MP3
 
-def organize_mp3_by_artist_and_album(mp3_directory):
+def organize_mp3_by_artist_and_album():
+    mp3_directory = input("Enter the path to the folder containing MP3 files: ")
+
+    # Check if the directory exists
+    if not os.path.isdir(mp3_directory):
+        print("Invalid directory path. Please enter a valid directory path.")
+        return
+
     # Iterate through each file in the directory
     for file_name in os.listdir(mp3_directory):
         if file_name.endswith('.mp3'):
@@ -31,6 +38,5 @@ def organize_mp3_by_artist_and_album(mp3_directory):
     
     print("Organizing complete!")
 
-# Example usage:
-mp3_directory = "/path/to/mp3_files"
-organize_mp3_by_artist_and_album(mp3_directory)
+# Call the function to start organizing
+organize_mp3_by_artist_and_album()
