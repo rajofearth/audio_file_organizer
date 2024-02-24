@@ -27,9 +27,11 @@ Created by [Rajofearth](https://github.com/rajofearth) with the help of ChatGPT 
    ```
 
 ### Usage
-1. Place your MP3 files in the `mp3_files` directory.
-2. Run the script `mp3orga.py`.
-3. The script will organize your MP3 files into folders based on artist and album.
+1. Run the script `mp3orga.py`.
+2. Scrpt will ask User to for Folder of mp3 Files, for example
+   $ python3 mp3orga1.py
+   Enter the path to the folder containing MP3 files:
+4. The script will organize your MP3 files into folders based on artist and album.
 
 #### Folder Structure
 ```markdown
