@@ -1,4 +1,5 @@
 import os
+import re
 from mutagen.mp3 import MP3
 from mutagen.flac import FLAC
 from mutagen.wavpack import WavPack
@@ -23,6 +24,17 @@ def extract_metadata(audio):
     else:
         genre = "Unknown Genre"
     return artist, album, genre
+
+def sanitize_directory_name(name):
+    # Remove special characters using regular expression
+    name = re.sub(r'[^\w\s-]', '', name)
+    # Replace spaces with underscores
+    name = name.replace(' ', '_')
+    # Limit the maximum length of directory names
+    max_length = 255
+    if len(name) > max_length:
+        name = name[:max_length]
+    return name
 
 def organize_audio_custom():
     audio_directory = input("Enter the path to the folder containing audio files: ")
@@ -49,6 +61,11 @@ def organize_audio_custom():
                 
                 # Extract metadata
                 artist, album, genre = extract_metadata(audio)
+
+                # Sanitize directory names
+                artist = sanitize_directory_name(artist)
+                album = sanitize_directory_name(album)
+                genre = sanitize_directory_name(genre)
             except Exception as e:
                 print(f"Error processing {file_name}: {e}")
                 continue
@@ -68,10 +85,10 @@ def organize_audio_custom():
                 if not os.path.exists(current_path):
                     os.makedirs(current_path)
 
-            # Move file to the final directory
+           # Move file to the final directory
             new_file_path = os.path.join(current_path, file_name)
             os.rename(file_path, new_file_path)
-            print(f"Moved {file_name} to appropriate directory based on custom rules")
+            print(f"Moved {file_name} to {current_path}")
         else:
             print(f"Ignored {file_name}: Not an audio file")
 
