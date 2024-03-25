@@ -13,7 +13,7 @@ Created by [Rajofearth](https://github.com/rajofearth) with the assistance of [C
 ### Installation
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/audio_organizer.git
+   git clone https://github.com/rajofearth/audio_organizer.git
    ```
 
 2. Navigate to the project directory:
